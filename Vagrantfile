@@ -25,6 +25,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", :run => 'always', privileged: false, inline: <<-SHELL
     cd /vagrant
     npm install
-    pm2 start /vagrant/app.js
+    pm2 start /vagrant/app.js --force --watch
   SHELL
 end
