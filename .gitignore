@@ -1,6 +1,8 @@
 .DS_Store
+.vagrant
 node_modules
 build
 .env
 .idea
 npm-debug.log*
+*-cloudimg-console.log
